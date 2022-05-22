@@ -1,12 +1,32 @@
 [
-    {
-      "id": 1,
-      "name": "OG Emoji pack",
-      "price": "0.09",
-      "description": "Get this avatar pack for only $0.09! Includes my awesome avatar!",
-      "image_url": "https://gateway.pinata.cloud/ipfs/QmYbtgfZ5pMbTZnHMFSDi67pREaWJ2527jkkbwrG2YgBZu",
-      "filename": "Emojis.zip",
-      "hash": "QmYbtgfZ5pMbTZnHMFSDi67pREaWJ2527jkkbwrG2YgBZu"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Kermit meme",
+    "price": "0.02",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Kermit_the_Frog.jpg/220px-Kermit_the_Frog.jpg",
+    "description": "hey!",
+    "filename": "I_should_make_memes_-_giphy.gif",
+    "hash": "QmXKZJCUSdtbhxXPV2wbTHDHWbvLLVwdyeNkzxo8JZKRXz",
+    "owner": "3tYVZJDZ7VvaQtgNrMTDr9hUZCDDBXxo5pdKYoCESawp"
+  },
+  {
+    "id": 2,
+    "name": "dancing meme",
+    "price": "0.01",
+    "image_url": "https://static.educalingo.com/img/en/800/dance.jpg",
+    "description": "people dancing!",
+    "filename": "dancing.png",
+    "hash": "Qmc1JgiDzJwSTCGRQWnzr8G4QxMXugq5xCWNhu6Y9FrDBv",
+    "owner": "5axRJumTuewsmNEcEBcDgEPrUNJExdZwjwA12EjVhEGX"
+  },
+  {
+    "id": 3,
+    "name": "hair",
+    "price": "0.01",
+    "image_url": "https://i.pinimg.com/564x/45/11/27/451127fb45e95205763f0caf35ff8b39.jpg",
+    "description": "a lion with great hair",
+    "filename": "1653137358840.jpeg",
+    "hash": "QmVvCQToRWz2Ke1VS1r5xGxDj6Cu4fyZ2k3HscDUTtonW9",
+    "owner": "3tYVZJDZ7VvaQtgNrMTDr9hUZCDDBXxo5pdKYoCESawp"
+  }
+]

@@ -1,5 +1,7 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import {useEffect, useState} from "react";
+
+import CreateProduct from "../components/CreateProduct";
 import HeadComponent from '../components/Head';
 import NotConnectedContainer from "../components/NotConnectedContainer";
 
@@ -11,6 +13,7 @@ const TWITTER_BUILDSPACE_LINK = `https://twitter.com/_buildspace`;
 const App = () => {
   
   const {publicKey} = useWallet();
+  const [creating, setCreating] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -22,7 +25,7 @@ const App = () => {
           console.log("Products:", data)
         })
     }
-  }, [publicKey])
+  }, [publicKey, creating])
   
   return (
     <div className="App">
@@ -32,8 +35,16 @@ const App = () => {
           <h1 className="header"> 🤑 My super Meme Store 🤑</h1>
           <h2 className="sub-text">Give us your money!</h2>
         </header>
+        
+        <button className="create-product-button" onClick={() => setCreating(!creating)}>
+          {
+            creating ? "Close" : "Create Product"
+          }
+        </button>
+  
 
         <main>
+          { creating && <CreateProduct owner={publicKey.toString()} onComplete={() => setCreating(false)}/> }
           <NotConnectedContainer publicKey={publicKey} products={products}/>
         </main>
 
